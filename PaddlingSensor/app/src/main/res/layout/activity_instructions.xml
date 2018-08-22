@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.InstructionsActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewSensor1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="@string/instructions_sensor1"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewSensor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions_sensor2"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewConnect1"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="@string/instructions_connect1"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewConnect2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions_connect2"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewConnect3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions_connect3"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewConnect4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions_connect4"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewFeedback1"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="@string/instructions_feedback1"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewFeedback2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions_feedback2"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewFeedback3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions_feedback3"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewFeedback4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions_feedback4"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewFeedback5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions_feedback5"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

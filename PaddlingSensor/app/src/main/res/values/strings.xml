@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Paddling Sensor</string>
+
+    <string name="user_node_connect_info">Search and select the node on your paddle:</string>
+    <string name="front_node_connect_info">Search and select the node on the front paddler\'s paddle:</string>
+
+    <string name="start_button">START</string>
+    <string name="instructions_button">INSTRUCTIONS</string>
+    <string name="settings_button">SETTINGS</string>
+    <string name="search_imu_button">SEARCH FOR IMU-SENSORS</string>
+
+    <string name="instructions_sensor1">How To Use The Sensors\n\n</string>
+    <string name="instructions_sensor2">The sensors can be switched on by pressing once on
+        the button located on the middle of the sensor.\n\nIf it is on, it will blink with
+        a blue light.\n\nIf it is blinking with a red light, its battery is below 10%.\n\n
+        If it is pulsating, it is already connected.\n</string>
+
+    <string name="instructions_connect1">How To Connect \n\n</string>
+    <string name="instructions_connect2">1. Make sure the sensors to be used are
+        switched on.\n</string>
+    <string name="instructions_connect3">2. Press START. Read How To Use The Sensors for further
+        instructions on how to turn on the sensors.\n</string>
+    <string name="instructions_connect4">3. Press SEARCH IMU-SENSOR and activate Bluetooth if
+        prompted. Press on the sensor that is mounted on your paddle. \n</string>
+    <string name="instructions_connect5">4. Press SEARCH IMU-SENSOR. Press on the sensor that
+        is mounted on the paddle of the front paddler.\n</string>
+
+    <string name="instructions_usage">How to use application</string>
+    <string name="instructions_feedback1">How To Interpret The Feedback System\n\n</string>
+    <string name="instructions_feedback2">As feedback, you\'ll receive different type of feedback
+        depending on your synchronisation level. You will receive both visual and auditive feedback.
+        There are three different synchronisation levels, 1, 2 and 3.\n</string>
+    <string name="instructions_feedback3">In synchronisation level 1, you have achieved full
+        synchronisation with the front paddler. The screen will then be coloured in green and you
+        will hear a single beep during a stroke.\n
+    </string>
+    <string name="instructions_feedback4">In synchronisation level 2, you are a little behind
+        achieving full synchronisation with the front paddler. The screen will then be coloured in
+        yellow and you will hear a two beeps, with the second one directly after the first, during
+        a stroke.\n</string>
+    <string name="instructions_feedback5">In synchronisation level 3, you are far behind
+        achieving full synchronisation with the front paddler. The screen will then be coloured in
+        red and you will hear a three beeps, with the second one directly after the first and the
+        third directly after the second, during a stroke.\n</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Stroke settings -->
+    <string name="pref_header_stroke">Stroke Settings</string>
+
+    <string-array name="pref_list_frequencies">
+        <item>5</item>
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>400</item>
+    </string-array>
+    <string-array name="pref_list_frequency_values">
+        <item>5</item>
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>400</item>
+    </string-array>
+    <string name="pref_title_frequency">Sampling Frequency</string>
+
+    <string name="pref_title_sync_level_one">Time gap for synchronisation level 1</string>
+    <string name="pref_summary_sync_level_one">The max time difference in milliseconds which will be
+        accepted in order to reach synchronisation level 1.</string>
+
+    <string name="pref_title_sync_level_two">Time gap for synchronisation level 2</string>
+    <string name="pref_summary_sync_level_two">The max time difference  in milliseconds which will be
+        accepted in order to reach synchronisation level 2.</string>
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_set_language">Change language</string>
+    <string-array name="pref_language_titles">
+        <item>Svenska</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="pref_language_values">
+        <item>sv</item>
+        <item>en</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+</resources>

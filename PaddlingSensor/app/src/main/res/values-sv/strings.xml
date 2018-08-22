@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Paddling Sensor</string>
+
+    <string name="user_node_connect_info">Sök och välj sensorn på din paddel:</string>
+    <string name="front_node_connect_info">Sök och välj sensorn på frontkanotistens paddel:</string>
+
+    <string name="start_button">STARTA</string>
+    <string name="instructions_button">INSTRUKTIONER</string>
+    <string name="settings_button">INSTÄLLNINGAR</string>
+    <string name="search_imu_button">SÖK EFTER IMU-SENSORER</string>
+
+    <string name="instructions_sensor1">Hur Du Använder Sensorerna\n\n</string>
+    <string name="instructions_sensor2">The sensors can be switched on by pressing once on
+        the button located on the middle of the sensor.\n\nIf it is on, it will blink with
+        a blue light.\n\nIf it is blinking with a red light, its battery is below 10%.\n\n
+        If it is pulsating, it is already connected.\n</string>
+
+    <string name="instructions_connect1">Hur Du Ansluter Till Sensorerna\n\n</string>
+    <string name="instructions_connect2">1. Se till att sensorerna som ska användas är påslagna.
+        \n</string>
+    <string name="instructions_connect3">2. Tryck på knappen STARTA. Läs Hur Du Ansluter Till
+        Sensorerna för instruktioner på hur du sätter på sensorerna.\n</string>
+    <string name="instructions_connect4">3. Tryck på SÖK EFTER IMU-SENSORER och slå på Bluetooth
+        om du blir uppmanad till det. Tryck på sensorn som är monterad på din paddel.\n</string>
+    <string name="instructions_connect5">4. Tryst på SÖK EFTER IMU-SENSORER. Tryck sedan på sensorn
+        som sitter på frontkanotistens paddel.\n</string>
+
+    <string name="instructions_usage">Hur Du Använder Applikationen</string>
+    <string name="instructions_feedback1">Hur Du Får Respons\n\n</string>
+    <string name="instructions_feedback2">Som respons på din synkroniseringsnivå med
+        frontkanotisten kommer du få visuell och auditiv respons. Det finns tre
+        synkroniseringsnivåer, 1, 2 och 3.\n</string>
+    <string name="instructions_feedback3">I nivå 1 har du full synkronisering med frontkanotisten.
+        Då kommer skärmen färgas grönt och du kommer höra ett enskilt pip vid ett paddeltag.\n
+    </string>
+    <string name="instructions_feedback4">I nivå 2 är du lite ifrån att uppnå full synkronisering
+        med frontkanotisten. Då kommer skärmen färgas gult och du kommer höra två pip tätt inpå
+        varandra vid ett paddeltag.\n</string>
+    <string name="instructions_feedback5">I nivå 3 är du långt ifrån att uppnå full synkronisering
+        med frontkanotisten. Då kommer skärmen färgas rött och du kommer höra tre pip tätt inpå
+        varandra vid ett paddeltag.\n</string>
+
+    <string-array name="pref_language_titles">
+        <item>Svenska</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="pref_language_values">
+        <item>sv</item>
+        <item>en</item>
+    </string-array>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/startCanoeImage"
+            android:layout_width="338dp"
+            android:layout_height="129dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/canoe"
+            tools:layout_editor_absoluteY="18dp" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="206dp"
+            android:layout_height="57dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:background="@android:color/transparent"
+            android:text="@string/start_button"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="45dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/instructionsCanoeImage"
+            android:layout_width="331dp"
+            android:layout_height="129dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="239dp"
+            app:srcCompat="@drawable/canoe"
+            tools:layout_editor_absoluteY="162dp" />
+
+        <Button
+            android:id="@+id/instructionsButton"
+            android:layout_width="333dp"
+            android:layout_height="57dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="278dp"
+            android:background="@android:color/transparent"
+            android:text="@string/instructions_button"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteY="198dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/settingsCanoeImage"
+            android:layout_width="328dp"
+            android:layout_height="129dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"
+            app:srcCompat="@drawable/canoe"
+            tools:layout_editor_absoluteY="298dp" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="323dp"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="76dp"
+            android:background="@android:color/transparent"
+            android:text="@string/settings_button"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteY="350dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
+

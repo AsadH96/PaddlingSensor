@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="200"
+        android:entries="@array/pref_list_frequencies"
+        android:entryValues="@array/pref_list_frequency_values"
+        android:key="sampling_frequency"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_frequency" />
+
+    <EditTextPreference
+        android:defaultValue="50"
+        android:key="sync_level_one"
+        android:title="@string/pref_title_sync_level_one"
+        android:summary="@string/pref_summary_sync_level_one"
+        android:inputType="numberDecimal"
+        android:maxLength="3"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+    <EditTextPreference
+        android:defaultValue="100"
+        android:key="sync_level_two"
+        android:title="@string/pref_title_sync_level_two"
+        android:summary="@string/pref_summary_sync_level_two"
+        android:inputType="numberDecimal"
+        android:maxLength="3"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+</PreferenceScreen>
