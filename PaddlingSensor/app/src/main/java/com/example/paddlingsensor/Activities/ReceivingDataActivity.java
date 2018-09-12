@@ -51,7 +51,6 @@ public class ReceivingDataActivity extends AppCompatActivity {
         model.startHandlingData();
 
         //model.testSound();
-        initialiseFrontPaddleStrokeTimer();
     }
 
     /**
@@ -65,16 +64,16 @@ public class ReceivingDataActivity extends AppCompatActivity {
         model.testSound();
     }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent e) {
-
-        switch (e.getAction()) {
-            case MotionEvent.ACTION_MOVE:
-                System.out.println("Tesssttt");
-                model.testSound();
-        }
-        return true;
-    }
+//    @Override
+//    public boolean onTouchEvent(MotionEvent e) {
+//
+//        switch (e.getAction()) {
+//            case MotionEvent.ACTION_MOVE:
+//                System.out.println("Tesssttt");
+//                model.testSound();
+//        }
+//        return true;
+//    }
 
     /**
      * Set TextView for accelerometer's X-axis
@@ -156,32 +155,6 @@ public class ReceivingDataActivity extends AppCompatActivity {
                 break;
 
         }
-    }
-
-    private CountDownTimer initialiseFrontPaddleStrokeTimer() {
-
-        CountDownTimer timer = new CountDownTimer(200, 20) {
-
-            /**
-             * Check each 10 ms if a stroke is discovered on front paddle
-             *
-             * @param millisecondsUntilFinished
-             */
-            @Override
-            public void onTick(long millisecondsUntilFinished) {
-                System.out.println("In timerrr tick");
-                if (true) {
-                    System.out.println("Front reccceived in timer");
-                    cancel();
-                }
-            }
-
-            @Override
-            public void onFinish() {
-                System.out.println("Finished frrront");
-            }
-        }.start();
-        return null;
     }
 
     /**

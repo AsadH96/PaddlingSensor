@@ -11,16 +11,17 @@
     <string name="search_imu_button">SÖK EFTER IMU-SENSORER</string>
 
     <string name="instructions_sensor1">Hur Du Använder Sensorerna\n\n</string>
-    <string name="instructions_sensor2">The sensors can be switched on by pressing once on
-        the button located on the middle of the sensor.\n\nIf it is on, it will blink with
-        a blue light.\n\nIf it is blinking with a red light, its battery is below 10%.\n\n
-        If it is pulsating, it is already connected.\n</string>
+    <string name="instructions_sensor2">Sensorerna slås på genom att trycka en gång på knappen som
+        finns på mitten av sensorn.\n\nOm sensorn är påslagen kommer den blinka med ett blått ljus.
+        \n\nOm sensorn blinkar med ett rött ljus ligger batterinivån under 10%.\n\n
+        Om sensorns lampa pulserar istället för att blinka är den ansluten.\n</string>
 
     <string name="instructions_connect1">Hur Du Ansluter Till Sensorerna\n\n</string>
     <string name="instructions_connect2">1. Se till att sensorerna som ska användas är påslagna.
-        \n</string>
-    <string name="instructions_connect3">2. Tryck på knappen STARTA. Läs Hur Du Ansluter Till
-        Sensorerna för instruktioner på hur du sätter på sensorerna.\n</string>
+        Läs Hur Du Använder Sensorerna för instruktioner på hur du slår på sensorerna. Se också
+        till att sensorerna är parade med enheten som används, detta görs via
+        Bluetoothinställningarna för enheten.\n</string>
+    <string name="instructions_connect3">2. Tryck på knappen STARTA.\n</string>
     <string name="instructions_connect4">3. Tryck på SÖK EFTER IMU-SENSORER och slå på Bluetooth
         om du blir uppmanad till det. Tryck på sensorn som är monterad på din paddel.\n</string>
     <string name="instructions_connect5">4. Tryst på SÖK EFTER IMU-SENSORER. Tryck sedan på sensorn
@@ -29,18 +30,73 @@
     <string name="instructions_usage">Hur Du Använder Applikationen</string>
     <string name="instructions_feedback1">Hur Du Får Respons\n\n</string>
     <string name="instructions_feedback2">Som respons på din synkroniseringsnivå med
-        frontkanotisten kommer du få visuell och auditiv respons. Det finns tre
+        frontkanotisten kommer du få visuell respons. Det finns tre
         synkroniseringsnivåer, 1, 2 och 3.\n</string>
     <string name="instructions_feedback3">I nivå 1 har du full synkronisering med frontkanotisten.
-        Då kommer skärmen färgas grönt och du kommer höra ett enskilt pip vid ett paddeltag.\n
+        Då kommer skärmen färgas grönt vid ett paddeltag.\n
     </string>
     <string name="instructions_feedback4">I nivå 2 är du lite ifrån att uppnå full synkronisering
-        med frontkanotisten. Då kommer skärmen färgas gult och du kommer höra två pip tätt inpå
-        varandra vid ett paddeltag.\n</string>
+        med frontkanotisten. Då kommer skärmen färgas gult vid ett paddeltag.\n</string>
     <string name="instructions_feedback5">I nivå 3 är du långt ifrån att uppnå full synkronisering
-        med frontkanotisten. Då kommer skärmen färgas rött och du kommer höra tre pip tätt inpå
-        varandra vid ett paddeltag.\n</string>
+        med frontkanotisten. Då kommer skärmen färgas rött vid ett paddeltag.\n</string>
 
+    <string name="instructions_sensor_placement1">Hur Sensorn Placeras På Paddeln</string>
+    <string name="instructions_sensor_placement2">Placera sensorn på paddelskaftet i en sådan
+        position att knappen på sensorn pekar rakt uppåt medan paddeln är i en neutral position.
+        Med en neutral position mednas positionen som paddeln är i när den är exakt mellan
+        utförande av ett paddeltag på vänster sida och utförande av ett paddeltag på höger sida.
+        Båda sensorerna, den som sitter på frontkanotistens paddel och den som sitter på
+        användarkanotistens paddel, ska placeras på vänster sida av den högra handen, sett från
+        kanotistens perspektiv. Sensorn ska vara orienterad på ett sådant sätt att skyddet för
+        laddningsporten är riktad mot paddlaren.\n</string>
+
+    <string name="title_activity_settings">Inställningar</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Stroke settings -->
+    <string name="pref_header_stroke">Paddeltagsinställningar</string>
+
+    <string-array name="pref_list_frequencies">
+        <item>5</item>
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>400</item>
+    </string-array>
+    <string-array name="pref_list_frequency_values">
+        <item>5</item>
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>400</item>
+    </string-array>
+    <string name="pref_title_frequency">Samplingsfrekvens</string>
+
+    <string name="pref_title_sync_level_one">Tidsintervall för synkroniseringsnivå 1</string>
+    <string name="pref_summary_sync_level_one">Den maximala tidsskillnaden i millisekunder som
+        kommer accepteras för synkroniseringsnivå 1.</string>
+
+    <string name="pref_title_sync_level_two">Tidsintervall för synkroniseringsnivå 2</string>
+    <string name="pref_summary_sync_level_two">Den maximala tidsskillnaden i millisekunder som
+        kommer accepteras för synkroniseringsnivå 1.</string>
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Allmänt</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Visningsnamn</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_set_language">Ändra språk</string>
     <string-array name="pref_language_titles">
         <item>Svenska</item>
         <item>English</item>
@@ -49,4 +105,51 @@
         <item>sv</item>
         <item>en</item>
     </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Synkroniseringsfrekvens</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">Synkronieringsinställningar</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifikationer</string>
+
+    <string name="pref_title_new_message_notifications">Nytt-Meddelande-notifikation</string>
+
+    <string name="pref_title_ringtone">Ringsignal</string>
+    <string name="pref_ringtone_silent">Tyst</string>
+
+    <string name="pref_title_vibrate">Vibrera</string>
 </resources>

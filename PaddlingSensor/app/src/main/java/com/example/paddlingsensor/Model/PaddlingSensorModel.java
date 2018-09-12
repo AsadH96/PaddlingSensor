@@ -197,10 +197,22 @@ public class PaddlingSensorModel {
         userNode.resetTimestamp();
     }
 
+    /**
+     * Sets the sampling frequency to be used
+     *
+     * @param samplingFreq The sampling frequency chosen
+     */
     public void setSamplingFrequency(int samplingFreq) {
         samplingFrequency = samplingFreq;
     }
 
+    /**
+     * Sets the time interval for synchronisation level 1, where the interval is between 0 and
+     * syncLevelOne
+     *
+     * @param syncLevelOne The maximum millisecond for synchronisation level 1
+     * @return If it was successful or not
+     */
     public boolean setSyncLevelOne(float syncLevelOne) {
         if (syncLevelTwo != 0) {
             if (syncLevelOne < syncLevelTwo) {
@@ -214,10 +226,22 @@ public class PaddlingSensorModel {
         return true;
     }
 
+    /**
+     * Gets the maximum millisecond for the time interval of synchronisation level 1
+     *
+     * @return The maximum millisecond for synchronisation level 1
+     */
     public String getSyncLevelOne() {
         return Float.toString(syncLevelOne);
     }
 
+    /**
+     * Sets the time interval for synchronisation level 2, where the interval is between
+     * syncLevelOne and syncLevelTwo
+     *
+     * @param syncLevelTwo The maximum millisecond for synchronisation level 2
+     * @return If it was successful or not
+     */
     public boolean setSyncLevelTwo(float syncLevelTwo) {
         if (syncLevelTwo > syncLevelOne) {
             this.syncLevelTwo = syncLevelTwo;
@@ -227,6 +251,11 @@ public class PaddlingSensorModel {
         }
     }
 
+    /**
+     * Gets the maximum millisecond for the time interval of synchronisation level 2
+     *
+     * @return The maximum millisecond for synchronisation level 2
+     */
     public String getSyncLevelTwo() {
         return Float.toString(syncLevelTwo);
     }
@@ -379,7 +408,6 @@ public class PaddlingSensorModel {
         strokeHandler = new StrokeHandler(context, frontQueue, userQueue, this, syncLevelOne, syncLevelTwo);
         strokeHandlerThread = new Thread(strokeHandler);
         running = true;
-        System.out.println("Front frequency: " + frontNode.getStreamFrequency() + " and user frequency: " + frontNode.getStreamFrequency());
         strokeHandlerThread.start();
     }
 

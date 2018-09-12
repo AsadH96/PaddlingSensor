@@ -979,13 +979,6 @@ public class LpmsB2 extends Thread {
         mLpmsBData.imuId = imuId;
         mLpmsBData.timestamp = convertRxbytesToInt(o, rxBuffer);
 
-//        if(node.equals("Front")){
-//            System.out.println("----------------------------------- " + mLpmsBData.timestamp);
-//        }else if(node.equals("User")){
-//            System.out.println("+++++++++++++++++++++++++++++++++++ " + mLpmsBData.timestamp);
-//        }
-        //mLpmsBData.timestamp = System.currentTimeMillis();
-
         receivingTime = mLpmsBData.timestamp;
 
         o += 4;
@@ -1074,27 +1067,12 @@ public class LpmsB2 extends Thread {
             o += 4;
         }
 
-//        if(node.equals("Front")) {
-//            System.out.println("Data: " + mLpmsBData.acc[0] + " and " + mLpmsBData.acc[1] + " and " + mLpmsBData.acc[2] + " and " +
-//                    mLpmsBData.gyr[0] + " and " + mLpmsBData.gyr[1] + " and " + mLpmsBData.gyr[2] + " and " + receivingTime);
-//        }
-
         addToQueue();
         concatenateToFile();
 
+        //Code to get sensor values on screen in real-time, for testing purposes
 //        if (node.equals("User")) {
 //            updateUI();
-//        }
-
-
-//        synchronized (dataQueue) {
-//            //dataQueue.add(new LpmsBData(mLpmsBData));
-//            if (dataQueue.size() < DATA_QUEUE_SIZE)
-//                dataQueue.addFirst(new LpmsBData(mLpmsBData));
-//            else {
-//                dataQueue.removeLast();
-//                dataQueue.addFirst(new LpmsBData(mLpmsBData));
-//            }
 //        }
 
         newDataFlag = true;
@@ -1105,7 +1083,7 @@ public class LpmsB2 extends Thread {
      */
     private void addToQueue() {
         queue.add(new IMUQueueModel(/*mLpmsBData.acc[0], mLpmsBData.acc[1], mLpmsBData.acc[2],
-                mLpmsBData.gyr[0], mLpmsBData.gyr[1], mLpmsBData.gyr[2],*/ mLpmsBData.euler[0], mLpmsBData.timestamp));
+                mLpmsBData.gyr[0], mLpmsBData.gyr[1], mLpmsBData.gyr[2],*/ mLpmsBData.euler[0], receivingTime));
     }
 
     /**

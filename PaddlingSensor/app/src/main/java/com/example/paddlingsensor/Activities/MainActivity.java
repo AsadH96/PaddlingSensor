@@ -86,8 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
         String currentLanguage = Locale.getDefault().getLanguage();
         String settingsLanguage = sharedPreferences.getString("language", "en");
-        System.out.println("Current language: " + currentLanguage);
-        System.out.println("Settings language: " + settingsLanguage);
+
         if (!currentLanguage.equals(new Locale(settingsLanguage).getLanguage())) {
             setLocale(settingsLanguage);
             recreate();

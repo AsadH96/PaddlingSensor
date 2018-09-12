@@ -36,7 +36,7 @@ public class FeedbackSound extends Thread {
             soundPool = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         }
 
-        sound = soundPool.load(context, R.raw.beep_short_on, 1);
+        //sound = soundPool.load(context, R.raw.sound_to_be_played, 1);
     }
 
     /**

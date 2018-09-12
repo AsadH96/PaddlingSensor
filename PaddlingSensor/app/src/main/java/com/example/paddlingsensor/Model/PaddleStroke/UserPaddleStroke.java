@@ -22,6 +22,9 @@ public class UserPaddleStroke implements Runnable {
         this.userPaddling = false;
     }
 
+    /**
+     * Uses threshold value to detect a paddle stroke from user paddler.
+     */
     @Override
     public void run() {
 
@@ -32,14 +35,12 @@ public class UserPaddleStroke implements Runnable {
 
                 //if (userPaddleData.getAccY() <= (-0.5f) && userPaddleData.getGyrX() >= 100f && userPaddleData.getGyrY() >= (-30f) && !userPaddling) {
                 if(userPaddleData.getEulerX() >= (25.0f) && !userPaddling){
-                    //System.out.println("Ett paddeltag USER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" + userPaddleData.getTimestamp());
                     userPaddling = true;
                     strokeHandler.userStrokeDiscovered(userPaddleData.getTimestamp());
                 }
 
                 //if (userPaddleData.getAccY() > (-0.5f) && userPaddleData.getGyrX() < 100f && userPaddleData.getGyrY() < (-30f) && userPaddling) {
                 if(userPaddleData.getEulerX() < (25.0f) && userPaddling){
-                    //System.out.println("Inte ett paddeltag USER---------------------------------------------------");
                     userPaddling = false;
                     strokeHandler.userStrokeDone();
                 }
@@ -49,6 +50,11 @@ public class UserPaddleStroke implements Runnable {
         }
     }
 
+    /**
+     * Returns size of userQueue.
+     *
+     * @return The size of the queue
+     */
     public int getQueueSize(){
         return userQueue.size();
     }

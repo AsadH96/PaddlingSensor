@@ -14,35 +14,43 @@
     <string name="instructions_sensor2">The sensors can be switched on by pressing once on
         the button located on the middle of the sensor.\n\nIf it is on, it will blink with
         a blue light.\n\nIf it is blinking with a red light, its battery is below 10%.\n\n
-        If it is pulsating, it is already connected.\n</string>
+        If the sensor lamp is pulsating, it is already connected.\n</string>
 
     <string name="instructions_connect1">How To Connect \n\n</string>
     <string name="instructions_connect2">1. Make sure the sensors to be used are
-        switched on.\n</string>
-    <string name="instructions_connect3">2. Press START. Read How To Use The Sensors for further
-        instructions on how to turn on the sensors.\n</string>
+        switched on. Read How To Use The Sensors for further instructions on how to turn on the
+        sensors. Also make sure that the sensors are paired together with the device, this is done
+        in the Bluetooth settings of the device.\n</string>
+    <string name="instructions_connect3">2. Press START.\n</string>
     <string name="instructions_connect4">3. Press SEARCH IMU-SENSOR and activate Bluetooth if
         prompted. Press on the sensor that is mounted on your paddle. \n</string>
     <string name="instructions_connect5">4. Press SEARCH IMU-SENSOR. Press on the sensor that
         is mounted on the paddle of the front paddler.\n</string>
 
-    <string name="instructions_usage">How to use application</string>
+    <string name="instructions_usage">How To Use Application</string>
     <string name="instructions_feedback1">How To Interpret The Feedback System\n\n</string>
     <string name="instructions_feedback2">As feedback, you\'ll receive different type of feedback
-        depending on your synchronisation level. You will receive both visual and auditive feedback.
+        depending on your synchronisation level. You will receive both visual feedback.
         There are three different synchronisation levels, 1, 2 and 3.\n</string>
     <string name="instructions_feedback3">In synchronisation level 1, you have achieved full
-        synchronisation with the front paddler. The screen will then be coloured in green and you
-        will hear a single beep during a stroke.\n
-    </string>
+        synchronisation with the front paddler. The screen will then be coloured in green
+        during a stroke.\n</string>
     <string name="instructions_feedback4">In synchronisation level 2, you are a little behind
         achieving full synchronisation with the front paddler. The screen will then be coloured in
-        yellow and you will hear a two beeps, with the second one directly after the first, during
-        a stroke.\n</string>
+        yellow during a stroke.\n</string>
     <string name="instructions_feedback5">In synchronisation level 3, you are far behind
         achieving full synchronisation with the front paddler. The screen will then be coloured in
-        red and you will hear a three beeps, with the second one directly after the first and the
-        third directly after the second, during a stroke.\n</string>
+        red during a stroke.\n</string>
+
+    <string name="instructions_sensor_placement1">How To Place The Sensor On The Paddle\n</string>
+    <string name="instructions_sensor_placement2">Place the sensor on the shaft of the paddle in
+        such way that the button is pointing straight upwards while the paddle is held in a neutral
+        stance in the paddle. A neutral stance implies a stance of the paddle where the paddle is
+        just between the action of doing a left paddle stroke and the action of doing a right paddle
+        stroke. Both of the sensors, the one on the front paddler\'s paddle and the one of the user
+        paddler\'s paddle, should be placed on the left side of the right hand, from the paddler\'s
+        perspective. The sensor should be oriented in such a way that the cover for the charging
+        port of the sensor is faced towards the paddler.\n</string>
 
     <string name="title_activity_settings">Settings</string>
 

@@ -50,41 +50,26 @@ public class IMUDataLogger {
 
         File tempFile = new File(path);
 
-        if (tempFile.exists()) {
-            System.out.println("It exists!");
-        } else {
-            System.out.println("It doesn't exist");
+        if (!tempFile.exists()) {
             tempFile.mkdirs();
-            System.out.println("Created dir");
         }
 
         String filetype = filename + ".txt";
         boolean file_created = false;
 
-        System.out.println("Filepath = " + path);
-
         try {
             while (!file_created) {
                 File file = new File(path + filetype);
-                System.out.println("Filename: " + file.getName());
 
                 if (!file.exists()) { // if file does not exist
-                    System.out.println("IIIIIIIIIIIIIIInside");
 
                     if (file.createNewFile()) {
-                        System.out.println("Creating new file");
                         fw = new FileWriter(file); // create file writer (used to write to file)
-                        System.out.println("File write created");
                         file_created = true;
-                        System.out.println("File created");
-                        System.out.println("Pathhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh: " + file.getAbsolutePath());
                     } else {
-                        System.out.println("File not created");
                         return false;
                     }
-                    System.out.println("Outside");
                 } else { // if file already exists
-                    System.out.println("File exists");
                     file_number++;
                     filename = filename + "_" + file_number + ".txt"; // make filename look like this
                 }

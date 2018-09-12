@@ -21,9 +21,6 @@ public class IMUQueue<E> extends LinkedList<IMUQueueModel> {
         list.add(object);
         if (list.size() > this.maxSize) {
             list.removeFirst();
-
-//            System.out.println("Removed one, current one: accX: "  + list.getFirst().getAccX() + " accY: " + list.getFirst().getAccY() + " accZ: " +
-//            list.getFirst().getAccZ() + " gyrX: " + list.getFirst().getGyrX());
         }
 
 

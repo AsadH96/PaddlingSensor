@@ -117,6 +117,29 @@
                 android:textAppearance="@android:style/TextAppearance"
                 android:textSize="18sp" />
 
+            <TextView
+                android:id="@+id/textViewLpmsB2SensorPlacement1"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="@string/instructions_sensor_placement1"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewLpmsB2SensorPlacement1"
+                android:layout_width="match_parent"
+                android:layout_height="342dp"
+                app:srcCompat="@drawable/lpmsb2_placement1" />
+
+            <TextView
+                android:id="@+id/textViewLpmsB2SensorPlacement2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions_sensor_placement2"
+                android:textAppearance="@android:style/TextAppearance"
+                android:textSize="18sp" />
+
         </LinearLayout>
     </ScrollView>
 

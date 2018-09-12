@@ -98,13 +98,11 @@ public class StrokeHandler implements Runnable {
      */
     @Override
     public void run() {
-        //super.run();
 
         Looper.prepare();
 
         while ((frontPaddleStroke.getQueueSize() == 0 || userPaddleStroke.getQueueSize() == 0) && model.getRunning()) {
-
-            System.out.println("Size in front and user queues: " + frontPaddleStroke.getQueueSize() + " and " + userPaddleStroke.getQueueSize());
+//            System.out.println("Size in front and user queues: " + frontPaddleStroke.getQueueSize() + " and " + userPaddleStroke.getQueueSize());
         }
 
         this.running = true;
@@ -125,16 +123,11 @@ public class StrokeHandler implements Runnable {
 
             if (userPaddling && frontPaddling && !feedbackReceived) {
 
-                System.out.println("User time: " + userStrokeTimestamp);
-                System.out.println("Front time: " + frontStrokeTimestamp);
-
                 if (userStrokeTimestamp > frontStrokeTimestamp) {
                     difference = userStrokeTimestamp - frontStrokeTimestamp;
                 } else {
                     difference = frontStrokeTimestamp - userStrokeTimestamp;
                 }
-
-                System.out.println("DIFFERENCE IS ______" + difference);
 
                 loops = Integer.MIN_VALUE;
 
@@ -153,10 +146,8 @@ public class StrokeHandler implements Runnable {
             }
 
             if (userPaddling && !frontPaddling && !feedbackReceived) {
-                System.out.println("User received");
                 frontPaddleTimer.start();
             } else if (!userPaddling && frontPaddling && !feedbackReceived) {
-                System.out.println("Front received");
                 userPaddleTimer.start();
             }
 
@@ -185,16 +176,13 @@ public class StrokeHandler implements Runnable {
              */
             @Override
             public void onTick(long millisecondsUntilFinished) {
-                System.out.println("In timer tick");
                 if (frontPaddling) {
-                    System.out.println("Front received in timer");
                     cancel();
                 }
             }
 
             @Override
             public void onFinish() {
-                System.out.println("Finished front");
                 userPaddling = false;
             }
         };
@@ -218,16 +206,13 @@ public class StrokeHandler implements Runnable {
              */
             @Override
             public void onTick(long millisecondsUntilFinished) {
-                System.out.println("In timer tick");
                 if (userPaddling) {
-                    System.out.println("user received in timer");
                     cancel();
                 }
             }
 
             @Override
             public void onFinish() {
-                System.out.println("Finished user");
                 frontPaddling = false;
             }
         };
