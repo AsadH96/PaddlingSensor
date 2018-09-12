@@ -1,6 +1,6 @@
 # PaddlingSensor
 
-To get the application on your device:
+How to get the application on your mobile device running Android:
 
   1. Open the PaddlingSensor project in Android Studio.
   2. Connect a device to the computer.
